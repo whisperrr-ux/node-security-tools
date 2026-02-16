@@ -1,0 +1,28 @@
+{
+  "name": "node-security-tools",
+  "version": "1.0.0",
+  "description": "Web security analysis tools",
+  "author": "ByteCreeper",
+  "license": "MIT",
+  "scripts": {
+    "headers": "node header-checker.js",
+    "cors": "node cors-checker.js",
+    "ssl": "node ssl-checker.js"
+  },
+  "bin": {
+    "header-checker": "./header-checker.js",
+    "cors-checker": "./cors-checker.js",
+    "ssl-checker": "./ssl-checker.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "security",
+    "headers",
+    "cors",
+    "ssl",
+    "tls",
+    "web"
+  ]
+}
