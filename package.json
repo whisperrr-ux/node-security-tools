@@ -1,28 +1,26 @@
 {
   "name": "node-security-tools",
   "version": "1.0.0",
-  "description": "Web security analysis tools",
-  "author": "ByteCreeper",
+  "description": "Security and reconnaissance tools built with Node.js",
+  "author": "ByteCreeper <bytecreeper@proton.me>",
   "license": "MIT",
-  "scripts": {
-    "headers": "node header-checker.js",
-    "cors": "node cors-checker.js",
-    "ssl": "node ssl-checker.js"
-  },
-  "bin": {
-    "header-checker": "./header-checker.js",
-    "cors-checker": "./cors-checker.js",
-    "ssl-checker": "./ssl-checker.js"
-  },
+  "type": "module",
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "headers": "node header-scan.js",
+    "cors": "node cors-check.js",
+    "subdomain": "node subdomain-enum.js",
+    "tech": "node tech-detect.js",
+    "links": "node link-extractor.js"
   },
   "keywords": [
     "security",
+    "reconnaissance",
+    "pentest",
     "headers",
     "cors",
-    "ssl",
-    "tls",
-    "web"
+    "subdomain"
   ]
 }
